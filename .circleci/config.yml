@@ -23,11 +23,9 @@ jobs:
 
       - run: git reset --hard HEAD
       - run: git checkout dev;
-
-      - run: 
+      - run:
         name: Unit Test
         command: cat /dev/null | sbt test:test
-      
       - run: git config user.email "scala1117@gmail.com"
       - run: git config user.name "hiroki1117"
       - run: git checkout master
