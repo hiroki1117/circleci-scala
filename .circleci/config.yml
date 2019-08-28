@@ -19,6 +19,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.m2
+            - ~/target
           key: v1-dependencies--{{ checksum "build.sbt" }}
 
       - run: git reset --hard HEAD
